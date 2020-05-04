@@ -33,7 +33,7 @@ describe ('Round', function() {
     });
 
     it('should be able to store a new deck', function() {
-      expect(round.deck.cards.length).to.deep.equal(3);
+      expect(deck.cards.length).to.deep.equal(3);
     });
 
     it('should be able start playing the first card', function() { 
@@ -42,12 +42,11 @@ describe ('Round', function() {
     });
 
     it('should be able to respond with a message', function() {
-      const turn2 = new Turn('appendix', card2)
-      round.takeTurn('appendix');
-      const turn3 = new Turn('Fitzgerald', card3);
-      round.takeTurn('sea otter');
+      round.takeTurn('pug');
+      round.takeTurn('spleen');
+      round.takeTurn('Fitzgerald');
       round.returnCurrentCard();
-      // round.calculatePercentCorrect();
+      round.calculatePercentCorrect();
       round.endRound();
       expect(round.endRound).to.equal(`** Round over! ** You answered ${round.calculatePercentCorrect()}% of the questions correctly!`);
     });
