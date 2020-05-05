@@ -43,11 +43,10 @@ describe ('Round', function() {
 
     it('should be able to respond with a message', function() {
       round.takeTurn('pug');
-      round.takeTurn('spleen');
+      round.takeTurn('gallbladder');
       round.takeTurn('Fitzgerald');
       round.returnCurrentCard();
-      round.calculatePercentCorrect();
       round.endRound();
-      expect(round.endRound).to.equal(`** Round over! ** You answered ${round.calculatePercentCorrect()}% of the questions correctly!`);
+      expect(round.endRound()).to.be.a.string(`** Round over! ** You answered ${round.calculatePercentCorrect()}% of the questions correctly!`);
     });
 })
