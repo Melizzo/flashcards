@@ -13,7 +13,9 @@ Run your test suite using the command:
 
 `node index.js`
 
-The test results will output to the terminal.
+The test results will output to the terminal - if you score below 90%, 
+the test will restart itself again, and will continue to do so until a score of 90% 
+or higher is achieved.
 
 To kill the test:
 

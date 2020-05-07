@@ -41,7 +41,7 @@ describe ('Round', function() {
       expect(round.currentCard).to.equal(card1);
     });
 
-    it('should be able to respond with a message', function() {
+    it('should not be able to pass this test', function() {
       round.takeTurn('pug');
       round.takeTurn('gallbladder');
       round.takeTurn('Fitzgerald');

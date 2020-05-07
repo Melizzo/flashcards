@@ -40,7 +40,7 @@ async function main(round) {
   const getAnswer = await inquirer.prompt(genList(currentRound));
   const getConfirm = await inquirer.prompt(confirmUpdate(getAnswer.answers, round));
 
-    if(!round.returnCurrentCard() && round.calculatePercentCorrect() < 90) {
+    if(!round.returnCurrentCard() && round.calculatePercentCorrect() <= 90) {
       console.log(`!!~~~~~~~**Please try again and get over 90% to pass this amazing quiz**~~~~~~~~~~~~~~~~~~!!`)
       const cards = prototypeQuestions.map(quizQuestion => {
         const card = new Card (quizQuestion.id, quizQuestion.question, quizQuestion.answers, quizQuestion.correctAnswer)    

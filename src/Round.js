@@ -32,7 +32,7 @@ class Round {
         let time = Date.now() - this.startTime
         let seconds = (time / 1000) % 60;
         let minutes = Math.floor((time / 1000) / 60);
-        seconds < 10 ? `${minutes}:0${seconds.toFixed(2)}` : `${minutes}:${seconds.toFixed(2)}`
+        return (seconds < 10) ? `${minutes}:0${seconds.toFixed(2)}` : `${minutes}:${seconds.toFixed(2)}`
       }
 
      calculatePercentCorrect (){
