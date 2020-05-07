@@ -11,11 +11,8 @@ class Round {
 
      returnCurrentCard() {
          return this.currentCard;
-        //  if (!this.currentCard) {
-            // return this.inCorrectGuesses
-        }
+    }
      
-
      takeTurn(guess) {
         const turn = new Turn(guess, this.currentCard);
         this.turns++

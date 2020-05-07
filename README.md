@@ -14,7 +14,12 @@ Run your test suite using the command:
 `node index.js`
 
 The test results will output to the terminal.
+
+To kill the test:
+
+`control + c`
   
   
 ## Working Product
  !![](https://media.giphy.com/media/Y1pl2YB1UZPjq6VMAd/giphy.gif)
+
