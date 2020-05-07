@@ -1,4 +1,4 @@
-const assert = require('chai').assert;
+
 const chai = require('chai');
 const expect = chai.expect;
 
@@ -10,6 +10,7 @@ describe('Turn', function() {
     let card1;
     let guess;
     let turn;
+    let turn1;
 
     beforeEach(() => {
         turn = new Turn(guess, card),
