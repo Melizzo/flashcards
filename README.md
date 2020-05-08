@@ -24,5 +24,6 @@ To kill the test:
 
 
 Challenges: 
-*Timer extenstion 
-*Restart Game extenstion
+
+* Timer extenstion 
+* Restart Game extenstion
