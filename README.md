@@ -3,8 +3,6 @@
 or higher is achieved.
 
 Install/Setup Directions here:
-  
-## Running Your Tests
 
 Clone the repo to your computer
 
