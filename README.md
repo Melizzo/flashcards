@@ -20,7 +20,7 @@ To kill the test:
   
   
 ## Working Product
- !![](https://media.giphy.com/media/Y1pl2YB1UZPjq6VMAd/giphy.gif)
+![](https://media.giphy.com/media/Y1pl2YB1UZPjq6VMAd/giphy.gif)
 
 
 Challenges: 
